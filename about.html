@@ -1,0 +1,113 @@
+
+คุณส่ง
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แสดงสินค้าหรือบริการ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hwb(61 48% 0%);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+        }
+        .product-details {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .product-description {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .product-price {
+            font-size: 1.4em;
+            color: #27ae60;
+            margin-bottom: 15px;
+        }
+        .buy-button {
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .buy-button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>สินค้าหรือบริการของเรา</h1>
+
+    <div class="container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="bloggif_5b762343ac869.jpeg" alt="ตำไทยไข่เค็ม">
+            </div>
+            <div class="product-details">
+                <h2 class="product-title">ตำไทยไข่เค็ม</h2>
+                <p class="product-description">รสชาติ อร่อยกลมกล่อมถูกปาก</p>
+                <p class="product-price">฿60</p>
+                <a href="#" class="buy-button">ซื้อเลย</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="1_103628.webp" alt="ตำปูปลาร้า">
+            </div>
+            <div class="product-details">
+                <h2 class="product-title">ตำปูปลาร้า</h2>
+                <p class="product-description">ปลาร้าหอม อร่อยกลมกล่อมถูกปาก</p>
+                <p class="product-price">฿40</p>
+                <a href="#" class="buy-button">ซื้อเลย</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="66.webp" alt="ตำทะเลรวม">
+            </div>
+            <div class="ตำทะเลรวม">
+                <h2 class="product-title">ตำทะเลรวม</h2>
+                <p class="product-description">ของทะเลสดใหม่ทุกวัน อร่อยถูกใจแน่นอน</p>
+                <p class="product-price">฿100</p>
+                <a href="#" class="buy-button">ซื้อเลย</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
